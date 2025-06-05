@@ -1,6 +1,19 @@
 @SampleDDD.WebApi_HostAddress = http://localhost:5176
 
-GET {{SampleDDD.WebApi_HostAddress}}/weatherforecast/
+### Create a new todo item
+POST {{SampleDDD.WebApi_HostAddress}}/todos
+Content-Type: application/json
+
+{
+    "title": "Sample todo"
+}
+
+### Retrieve all todo items
+GET {{SampleDDD.WebApi_HostAddress}}/todos
+Accept: application/json
+
+### Retrieve a todo item by id
+GET {{SampleDDD.WebApi_HostAddress}}/todos/{id}
 Accept: application/json
 
 ###
