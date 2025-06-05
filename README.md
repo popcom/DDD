@@ -18,3 +18,7 @@ dotnet run
 
 You can then access Swagger UI at `https://localhost:5001/swagger` to test the API.
 
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
