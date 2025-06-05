@@ -1,6 +1,11 @@
 @SampleDDD.WebApi_HostAddress = http://localhost:5176
 
-GET {{SampleDDD.WebApi_HostAddress}}/weatherforecast/
+### Get all todos
+GET {{SampleDDD.WebApi_HostAddress}}/todos
 Accept: application/json
 
-###
+### Create a new todo
+POST {{SampleDDD.WebApi_HostAddress}}/todos?title=Buy%20milk
+
+### Get todo by id
+GET {{SampleDDD.WebApi_HostAddress}}/todos/{id}
